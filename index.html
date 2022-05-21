@@ -24,7 +24,10 @@
           <a class="active red item" style="font-size:19px; color: red !important; font-weight: bolder;" href="">
             Home
           </a>
-    
+          <a class="white item" style="font-size:19px; color: rgb(255, 255, 255) !important; font-weight: bolder;" href="">
+            <span><img class="avatar avatar-24 bg-light text-white p-1"
+                    src="https://raw.githubusercontent.com/twbs/icons/main/icons/map.svg"></span><span> Agartala</span>
+          </a>
           <div class="right menu">
             <div class="ui dropdown item" style="font-size:19px;">
               Goto
@@ -90,11 +93,11 @@
                   </div>
                 </div>
                 <div class="extra content" style="text-align: center;">
-                  <h4> Click and Book Now</h4>
-                  <span><a href="https://wa.me/919997754141" target="_blank"><img src="image/whatsapp.jpg"
+                  <button onclick="openModal()" class="ui red button">Book Now</button>
+                  <!-- <span><a href="https://wa.me/919997754141" target="_blank"><img src="image/whatsapp.jpg"
                     style="max-width: 21px; position: relative; top: 0px; opacity: 0.7;" alt=""></a></span>
               <span><a href="tel:9997754141" target="_blank"><img src="image/contact.png"
-                    style="max-width: 17px; margin: 6px; position: relative; top: 0px; opacity: 0.8;" alt=""></a></span>
+                    style="max-width: 17px; margin: 6px; position: relative; top: 0px; opacity: 0.8;" alt=""></a></span> -->
                 </div>
               </div>
             </div>
@@ -108,19 +111,14 @@
                 <div class="content">
                   <div class="header">Car</div>
                   <div class="meta">
-                    <a>Many varieties of car available.</a>
+                    <a>Many varieties of car available including CNG.</a>
                   </div>
                   <div class="description">
                     Ranges starts from Rs1600-2500 per day.
                   </div>
                 </div>
                 <div class="extra content" style="text-align: center;">
-                  <h4> Click and Book Now</h4>
-                  <span><a href="https://wa.me/919997754141"target="_blank"><img src="image/whatsapp.jpg"
-                    style="max-width: 21px; position: relative; top: 0px; opacity: 0.7;" alt=""></a></span>
-              <span><a href="tel:9997754141" target="_blank"><img src="image/contact.png"
-                    style="max-width: 17px; margin: 6px; position: relative; top: 0px; opacity: 0.8;" alt=""></a></span>
-                    </span>
+                  <button onclick="openModal()" class="ui red button">Book Now</button>
                   </div>
               </div>
             </div>
@@ -141,11 +139,7 @@
                   </div>
                 </div>
                 <div class="extra content" style="text-align: center;">
-                  <h4> Click and Book Now</h4>
-                  <span><a href="https://wa.me/919997754141" target="_blank"><img src="image/whatsapp.jpg"
-                    style="max-width: 21px; position: relative; top: 0px; opacity: 0.7;" alt=""></a></span>
-              <span><a href="tel:9997754141" target="_blank"><img src="image/contact.png"
-                    style="max-width: 17px; margin: 6px; position: relative; top: 0px; opacity: 0.8;" alt=""></a></span>
+                  <button onclick="openModal()" class="ui red button">Book Now</button>
                   </div>
               </div>
             </div>
@@ -166,17 +160,50 @@
                   </div>
                 </div>
                 <div class="extra content" style="text-align: center;">
-                  <h4> Click and Book Now</h4>
-                  <span><a href="https://wa.me/919997754141" target="_blank"><img src="image/whatsapp.jpg"
-                    style="max-width: 21px; position: relative; top: 0px; opacity: 0.7;" alt=""></a></span>
-              <span><a href="tel:9997754141" target="_blank"><img src="image/contact.png"
-                    style="max-width: 17px; margin: 6px; position: relative; top: 0px; opacity: 0.8;" alt=""></a></span>
+                  <button onclick="openModal()" class="ui red button">Book Now</button>
                   </div>
               </div>
             </div>
           </div>
         </div>
+        <div id="modal1" class="ui modal" style="height: 350px; width: 600px;">
+          <div class="ui stackable two column grid" style="margin-left: 10px;">
+            <!-- <div class="column"></div> -->
+            <div class="column" style="margin-top: 10px;" >
+              
+              <div class="ui small image" style="margin-left: 5px;">
+                
+                <a href="https://wa.me/919997754141" target="_blank"><img src="image/whatsapp.jpg"
+                   alt=""> <span><h5 style="color: black; text-align: center; ">Whatsapp Us</h5></span></a>
+                   <!-- style="max-width: 21px; position: relative; top: 0px; opacity: 0.7;" -->
+                <p style="color: rgb(255, 0, 0);">**click it and you will be redirected to dealer's Whatapp number</p>
+              </div>
+            </div>
+            <div class="column"style="margin-top: 10px;">
+              <div class="ui small image" style="margin-left: 5px;">
+              
+              <a href="tel:9997754141" target="_blank"><img src="image/contact.png"
+                alt=""><span><h5  style="color: black;  text-align: center;">Call us</h5></span></a>
+              <p style="color: red;">**click and you will be redirected to dealers Phone number. If u are using computer then type 'yes' to the popup to get the details in your phone.</p>
+                <!-- style="max-width: 17px; margin: 6px; position: relative; top: 0px; opacity: 0.8;" -->
+              </div> 
+            </div>
+          </div>
+          <div>
+          <div id="form">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScp_9Ft2D2iYE0ugOMBTKtkSBv2vGLrVj_bFrOr9hB6aLJ12g/viewform" target="_blank"><button id="fill" style="border-radius: 20px; width: 125px; height: 30px;background-color: rgb(187, 0, 255); margin-left: 30%; margin-top: 20px;color: #ffffff;">Cashback</button></a>
+            <p style="color: red; text-align: center; ">**After booking a ride, fill and Get upto Rs50 cashback. Must fill this form within two days of payment. </p></p>
+          </div>
+          </div>
+        </div>
       </section>
+      <script id="modal">
+        const openModal = () => {
+          console.log('ok1');
+          $('#modal1')
+           .modal('show');
+        }
+  </script>
     <section id="features">
         <h2 style="text-align: center;  color: orange;">Features</h2>
         <div class="ui stackable two column grid">
@@ -184,8 +211,20 @@
             <div class="ui segment" style="margin-bottom: 2px;">
               <div class="ui relaxed divided list" style="background-color: red;">
                 <div class="item">
+                  <div class="content" >
+                    <div class="header" style="color: black; font-weight: bolder;">Documents needed</div>
+                    <p style="color: white;">To rent a vehicle you need to have Driving lisence and Adhar card</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="content" >
+                    <div class="header" style="color: black; font-weight: bolder;">Attractive Cashback</div>
+                    <p style="color: white;">Get a cashback for every vehicle you rent. Cashback amount upto Rs50.</p>
+                  </div>
+                </div>
+                <div class="item">
                   <div class="content">
-                    <div class="header" style="color: black; font-weight: bolder;">You ask, We deliver.</div>
+                    <div class="header" style="color: black; font-weight: bolder;">You ask, We give.</div>
                     <p style="color: white;">We have many varities of vehicles. You are just a step away that is to contact us.</p>
                   </div>
                 </div>
@@ -208,12 +247,6 @@
                   </div>
                 </div>
                 <div class="item">
-                  <div class="content" >
-                    <div class="header" style="color: black; font-weight: bolder;">Documents needed</div>
-                    <p style="color: white;">To rent a vehicle you need to have Driving lisence and Adhar card</p>
-                  </div>
-                </div>
-                <div class="item">
                   <div class="content">
                     <div class="header" style="color: black; font-weight: bolder;">No clutter</div>
                     <p style="color: white;">No further question asked and no clutter.</p>
@@ -229,7 +262,7 @@
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe> -->
-              <video autoplay loop muted style="height: 330px; width: 400px;"><source src="image/video.mp4" type="video/mp4"></video>
+              <video autoplay loop muted style="height: 450px; width: 100%;"><source src="image/yamanvideo.mp4" type="video/mp4"></video>
           </div>
         </div>
       </section>
